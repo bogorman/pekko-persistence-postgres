@@ -1,4 +1,4 @@
-package akka.persistence.postgres.migration
+package pekko.persistence.postgres.migration
 
 import io.circe.{ Json, Printer }
 import org.slf4j.{ Logger, LoggerFactory }

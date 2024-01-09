@@ -1,8 +1,8 @@
-package akka.persistence.postgres.migration.journal
+package pekko.persistence.postgres.migration.journal
 
-import akka.persistence.postgres.JournalRow
-import akka.persistence.postgres.config.JournalTableConfiguration
-import akka.persistence.postgres.db.ExtendedPostgresProfile.api._
+import pekko.persistence.postgres.JournalRow
+import pekko.persistence.postgres.config.JournalTableConfiguration
+import pekko.persistence.postgres.db.ExtendedPostgresProfile.api._
 import io.circe.Json
 import slick.lifted.TableQuery
 

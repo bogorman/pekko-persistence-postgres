@@ -1,15 +1,15 @@
-package akka.persistence.postgres.migration
+package pekko.persistence.postgres.migration
 
-import akka.NotUsed
-import akka.actor.ActorSystem
-import akka.persistence.postgres.config.{ JournalConfig, SnapshotConfig }
-import akka.persistence.postgres.db.ExtendedPostgresProfile.api._
-import akka.persistence.postgres.db.SlickExtension
-import akka.persistence.postgres.migration.journal.Jdbc4JournalMigration
-import akka.persistence.postgres.migration.snapshot.Jdbc4SnapshotStoreMigration
-import akka.persistence.postgres.query.scaladsl.PostgresReadJournal
-import akka.persistence.query.PersistenceQuery
-import akka.stream.scaladsl.Source
+import org.apache.pekko.NotUsed
+import org.apache.pekko.actor.ActorSystem
+import pekko.persistence.postgres.config.{ JournalConfig, SnapshotConfig }
+import pekko.persistence.postgres.db.ExtendedPostgresProfile.api._
+import pekko.persistence.postgres.db.SlickExtension
+import pekko.persistence.postgres.migration.journal.Jdbc4JournalMigration
+import pekko.persistence.postgres.migration.snapshot.Jdbc4SnapshotStoreMigration
+import pekko.persistence.postgres.query.scaladsl.PostgresReadJournal
+import org.apache.pekko.persistence.query.PersistenceQuery
+import org.apache.pekko.stream.scaladsl.Source
 import com.typesafe.config.{ Config, ConfigFactory }
 import org.flywaydb.core.Flyway
 import org.flywaydb.core.api.migration.{ BaseJavaMigration, Context }

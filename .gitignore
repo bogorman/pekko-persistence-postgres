@@ -12,3 +12,5 @@ target
 .metals/
 .vscode/
 .bsp/
+.bloop/*
+**/.bloop/*
